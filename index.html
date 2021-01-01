@@ -11,53 +11,65 @@
 </head>
 <body>
 
-    <div class="cart">
-        <header class="cart__header">
-            <h1 class="cart__header_title">Список дел</h1>
-        </header>
+    <div class="wrapper">
+        <div class="todo-wrapper">
+            <header class="todo-header">
+                <h1 class="todo-header__title">Список дел</h1>
+            </header>
 
-        <ul class="lists">
-            <li class="lists__item">
-                <div class="lists__item_left">
-                    <input class="custom-checkbox" type="checkbox" id="check1">
-                    <label for="check1">Посмотреть фильм</label>
-                </div>
-                <i class="fas fa-trash-alt"></i>
-            </li>
-            <li class="lists__item">
-                <div class="lists__item_left">
-                    <input class="custom-checkbox" type="checkbox" id="check2">
-                    <label for="check2">Сыграть в футбол</label>
-                </div>
-                <i class="fas fa-trash-alt"></i>
-            </li>
-            <li class="lists__item">
-                <div class="lists__item_left">
-                    <input class="custom-checkbox" type="checkbox" id="check3">
-                    <label for="check3">Пойти на прогулку</label>
-                </div>
-                <i class="fas fa-trash-alt"></i>
-            </li>
-            <li class="lists__item">
-                <div class="lists__item_left">
-                    <input class="custom-checkbox" type="checkbox" id="check4">
-                    <label for="check4">Сделать зарядку</label>
-                </div>
-                <i class="fas fa-trash-alt"></i>
-            </li>
-            <li class="lists__item">
-                <div class="lists__item_left">
-                    <input class="custom-checkbox" type="checkbox" id="check5">
-                    <label for="check5">Купить продукты</label>
-                </div>
-                <i class="fas fa-trash-alt"></i>
-            </li>
-        </ul>
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input class="todo-item__checkbox" type="checkbox" id="check1">
+                        <label class="todo-item__name" for="check1">Посмотреть фильм</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input class="todo-item__checkbox" type="checkbox" id="check2">
+                        <label class="todo-item__name" for="check2">Сыграть в футбол</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input class="todo-item__checkbox" type="checkbox" id="check3">
+                        <label class="todo-item__name" for="check3">Пойти на прогулку</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input class="todo-item__checkbox" type="checkbox" id="check4">
+                        <label class="todo-item__name" for="check4">Сделать зарядку</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input class="todo-item__checkbox" type="checkbox" id="check5">
+                        <label class="todo-item__name" for="check5">Купить продукты</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+            </ul>
 
-        <footer class="cart__footer">
-            <input type="text" placeholder="Введите текст задачи...">
-        </footer>
+            <footer class="todo-action">
+                <input class="todo-action__field" type="text" placeholder="Введите текст задачи...">
+            </footer>
+        </div>
     </div>
-    
+
 </body>
 </html>

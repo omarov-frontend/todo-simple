@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,31 +14,30 @@ body {
     font-size: 11px;
 }
 
-.cart {
+.todo-wrapper {
     width: 300px;
     background-color: #f0f0f0;
     border-radius: 5px;
     border: 1px solid #989696;
 }
 
-.cart__header {
+.todo-header {
     background-color: #818181;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px;
 }
 
-.cart__header_title {
+.todo-header__title {
     font-size: 12px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
 }
 
-.lists {
+.todo-list {
     list-style: none;
 }
 
-.lists__item {
+.todo-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,9 +46,13 @@ body {
     color: #413a36;
 }
 
-.lists__item_left {
+.todo-item__name {
     display: flex;
     align-items: center;
+}
+
+.todo-item__delete-btn {
+    border: 0;
 }
 
 .fas {
@@ -57,11 +60,11 @@ body {
     cursor: pointer;
 }
 
-.cart__footer {
+.todo-action {
     padding: 12px 15px;
 }
 
-.cart__footer input {
+.todo-action .todo-action__field {
     width: 100%;
     border: none;
     padding: 8px 12px 8px;
@@ -69,7 +72,7 @@ body {
     background-color: #e5e5e5;
 }
 
-.cart__footer input::placeholder {
+.todo-action .todo-action__field::placeholder {
     color: #9a9393;
 }
 
