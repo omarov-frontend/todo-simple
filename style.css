@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a59f9f;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.cart {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #989696;
+}
+
+.cart__header {
+    background-color: #818181;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.cart__header_title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.lists {
+    list-style: none;
+}
+
+.lists__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    font-weight: 700;
+    color: #413a36;
+}
+
+.lists__item_left {
+    display: flex;
+    align-items: center;
+}
+
+.fas {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart__footer {
+    padding: 12px 15px;
+}
+
+.cart__footer input {
+    width: 100%;
+    border: none;
+    padding: 8px 12px 8px;
+    font-size: 10px;
+    background-color: #e5e5e5;
+}
+
+.cart__footer input::placeholder {
+    color: #9a9393;
+}
+
+/* стилизация чекбокса */
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:not(:checked) + label::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    background-color: #ededed;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label::after {
+    position: absolute;
+    content: "";
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 5px;
+    width: 12px;
+    height: 5px;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+}
