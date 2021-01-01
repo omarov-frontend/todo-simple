@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Простой Todo-лист">
+    <meta name="keywords" content="Вёрстка, HTML, CSS, Js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo-Simple</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="todo-wrapper">
+            <header class="todo-header">
+                <h1 class="todo-header__title">Список дел</h1>
+            </header>
+
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input type="checkbox" id="check1">
+                        <label for="check1">Посмотреть фильм</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input type="checkbox" id="check2">
+                        <label for="check2">Сыграть в футбол</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input type="checkbox" id="check3">
+                        <label for="check3">Пойти на прогулку</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input type="checkbox" id="check4">
+                        <label for="check4">Сделать зарядку</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item__name">
+                        <input type="checkbox" id="check5">
+                        <label for="check5">Купить продукты</label>
+                    </div>
+                    <button class="todo-item__delete-btn">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </li>
+            </ul>
+
+            <footer class="todo-action">
+                <input class="todo-action__field" type="text" placeholder="Введите текст задачи...">
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
