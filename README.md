@@ -1,3 +1,3 @@
 # todo-simple
 
-Demo-ссылка - https://omarov-frontend.github.io/todo-simple/
+Demo-ссылка - https://omarovfrontend.github.io/todo-simple/
